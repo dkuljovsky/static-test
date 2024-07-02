@@ -1,0 +1,25 @@
+*,
+*::before,
+*::after {
+  font-family: inherit;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color-scheme: dark light;
+  font-family: system-ui, sans-serif;
+
+  @media (prefers-color-scheme: dark) {
+    color-scheme: light dark;
+    background-color: #1e1e1e;
+    color: white;
+  }
+
+  @media (prefers-color-scheme: light) {
+    color-scheme: dark light;
+    background-color: white;
+    color: black;
+  }
+}
